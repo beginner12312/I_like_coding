@@ -12,19 +12,20 @@ app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 
 //jquery
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // jquery JS
-
 //img
-app.use(express.static('upload'))
-
+app.use(express.static('upload')); //
 //db
 
 
 // router
 var indexRouter = require('./router');
 var boardRouter = require('./router/board');
+var loginRouter = require('./router/login');
 
 app.use('/', indexRouter);
 app.use('/', boardRouter);
+app.use('/', loginRouter);
+
 
 app.listen(3000, function () {
 	console.log("3000포트로 노드서버 오픈!!");

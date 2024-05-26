@@ -1,0 +1,38 @@
+<%- include("../include/header") -%>
+
+<section>
+    <div class="container_form">
+        <form method="post">
+            <ul>
+                <li>
+                    <label>학번</label>
+                    <input type="text" name='id' required>
+                </li>
+                <li>
+                    <label>비밀번호</label>
+                    <input type="password" name="pw" required>
+                </li>
+                <li>
+                    <label>이름</label>
+                    <input type="text" name="name" required>
+                </li>
+                <li>
+                    <label>나이</label>
+                    <input type="number" name="age" required>
+                </li>
+                <li>
+                    <label>학과</label>
+                    <input type="text" name="major" required>
+                </li> 
+                <li>
+                    <label>생냔월일</label>
+                    <input type="date" name="birth" required>
+                </li>
+                
+            </ul>
+            <input type="submit" value="회원가입">
+        </form>
+    </div>
+</section>
+
+<%- include("../include/footer") -%>
